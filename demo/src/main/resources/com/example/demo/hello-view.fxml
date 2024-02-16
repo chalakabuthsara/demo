@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="330.0" prefWidth="338.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.example.demo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" wrappingWidth="295.8349609375">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Text>
+   <HBox prefHeight="0.0" prefWidth="298.0">
+      <children>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="User name:" wrappingWidth="74.21630859375" />
+         <TextField alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="186.0" />
+      </children>
+   </HBox>
+   <HBox prefHeight="11.0" prefWidth="298.0">
+      <children>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password: " wrappingWidth="73.9951171875" />
+         <TextField prefHeight="26.0" prefWidth="188.0" />
+      </children>
+   </HBox>
+    <Button contentDisplay="TOP" onAction="#onHelloButtonClick" text="Sign in" textAlignment="JUSTIFY">
+      <VBox.margin>
+         <Insets left="160.0" />
+      </VBox.margin>
+   </Button>
+
+    <Label fx:id="welcomeText" />
+</VBox>
